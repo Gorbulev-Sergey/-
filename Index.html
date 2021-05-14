@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просфора</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-title">
+            <a class="nav-brand" href="#home" onclick="hide_menu()">Просфора</a>
+            <a class="nav-hamburger" onclick="toggle_menu()">
+                <svg width="30" height="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 448">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="#product" onclick="toggle_menu()">Продукция</a>
+            <a href="#price" onclick="toggle_menu()">Цены</a>
+            <a href="#work" onclick="toggle_menu()">График</a>
+            <a href="#team" onclick="toggle_menu()">Команда</a>
+            <a href="#contacts" onclick="toggle_menu()">Контакты</a>
+        </div>
+    </div>
+
+    <div id="home" class="card banner" style="background: url(prosfora.jfif) center; background-size: cover;">
+        <div class="card-item color-white" style="font-weight: 400; text-align: center; padding-top: 3.5em;">
+            <h1 style="font-size: 3em;">
+                Привет, меня зовут <span style="text-transform: uppercase; font-size: 1.3em;">Даниил</span>!
+            </h1>
+            <h2>
+                Наша команда занимается выпечкой просфор и хлебов
+                для православных храмов.
+            </h2>
+            <div style="margin-top: 2.5em; font-size: .9em; text-transform: uppercase;letter-spacing: .4em;">
+                <a class="btn" href="#product">Наша продукция</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="product" class="card bg-1 color-white">
+        <h1 class="card-header color-5">Наша продукция</h1>
+        <div class="card-body">
+            <div class="card-item">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quae, consequatur ducimus,
+                    similique
+                    eum impedit ad dolores quas dolorum hic nemo, voluptate illum cupiditate ratione officiis fugiat sed
+                    modi expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quae, consequatur ducimus,
+                    similique
+                    eum impedit ad dolores quas dolorum hic nemo, voluptate illum cupiditate ratione officiis fugiat sed
+                    modi expedita.
+                </p>
+            </div>
+            <div class="card-item">
+                <img src="http://www.hram-podkopai.ru/upload/medialibrary/fb2/fb276731fcd534bc82d087a700438c3f.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="price" class="card bg-2 color-white">
+        <h1 class="card-header color-5">Цены</h1>
+        <div class="card-body">
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://avatars.mds.yandex.net/get-zen_doc/1587860/pub_5fb3b90df6872f437ec59f15_5fb3ce969bb3e6237414daf1/scale_1200"></img>
+                    <h3>Просфора малая</h3>
+                    <div class="badge bg-5">5 рублей</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://avatars.mds.yandex.net/get-zen_doc/1587860/pub_5fb3b90df6872f437ec59f15_5fb3ce969bb3e6237414daf1/scale_1200"></img>
+                    <h3>Просфора большая</h3>
+                    <div class="badge bg-5">30 рублей</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://avatars.mds.yandex.net/get-zen_doc/1587860/pub_5fb3b90df6872f437ec59f15_5fb3ce969bb3e6237414daf1/scale_1200"></img>
+                    <h3>Компплект просфор</h3>
+                    <div class="badge bg-5">150 рублей</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://avatars.mds.yandex.net/get-zen_doc/1587860/pub_5fb3b90df6872f437ec59f15_5fb3ce969bb3e6237414daf1/scale_1200"></img>
+                    <h3>Компплект хлебов</h3>
+                    <div class="badge bg-5">150 рублей</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="card bg-1 color-white">
+        <h1 class="card-header color-5">График работы</h1>
+        <div class="card-body">
+            <div class="card-item">
+                <div class="mb-1"><span class="badge bg-5">Понедельник</span> - выходной</div>
+                <div class="mb-1"><span class="badge bg-5">Вторник - суббота</span> - c 10:00 до 21:00</div>
+                <div><span class="badge bg-5">Воскресенье</span> - выходной</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="card bg-2 color-white">
+        <h1 class="card-header">Наша команда</h1>
+        <div class="card-body">
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://1.gravatar.com/avatar/a81d1a5841eb5f9e86e6b82413625ab4?s=500&d=mm&r=g"></img>
+                    <h3>Иванов<br>Иван Иванович</h3>
+                    <div class="badge bg-5">руководитель</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://pbs.twimg.com/profile_images/834907454098001920/_UHEhggq.jpg"></img>
+                    <h3>Петров<br>Иван Петрович</h3>
+                    <div class="badge bg-5">главный пекарь</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded" src="https://i1.sndcdn.com/avatars-000089892132-9c17pw-t500x500.jpg"></img>
+                    <h3>Сидоров<br>Василий Сергеевич</h3>
+                    <div class="badge bg-5">пекарь</div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="product">
+                    <img class="rounded"
+                        src="https://www.lbv-u.de/fileadmin/files/images/news/mann_laechelnd2.jpg"></img>
+                    <h3>Сергеев<br>Сергей Владимирович</h3>
+                    <div class="badge bg-5">пекарь</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="card bg-5 color-white">
+        <h1 class="card-header color-white">Контакты</h1>
+        <div class="card-body mb-1">
+            <div class="card-item">
+                <div class="mb-1"><span class="badge bg-1">Телефон</span> - 800-555-55-48</div>
+                <div class="mb-1"><span class="badge bg-1">Whatsup</span> - 910-555-55-48</div>
+            </div>
+        </div>
+        <h1 class="card-header color-white">Адрес</h1>
+        <iframe style="border-radius: .25em;"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d0793ef598f25d7215812b0a3e84c9679b974f4203d05675f906ba4125cddb3&amp;source=constructor"
+            width="100%" height="300" frameborder="0"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
